@@ -107,13 +107,13 @@ class Hobbit
     end
 # Got this working too! (screams internally)
     def grown_up?
-        if @age >= 33
-            is_adult == true
-            puts "At #{age} years old, #{name} is an adult hobbit!"
-        elsif
-            @age >= 101
+        if  @age >= 101
             is_old == true
             puts "At #{age} years old, #{name} is an old hobbit!"
+        elsif
+            @age >= 33
+            is_adult == true
+            puts "At #{age} years old, #{name} is an adult hobbit!"
         else
             @age < 33
             is_adult == false
@@ -135,6 +135,7 @@ end
 
 hobbit1 = Hobbit.new("Frodo", "Courageous", 22)
 hobbit2 = Hobbit.new("Sam", "Hungry", 24)
+
 
 hobbit1.celebrate_birthday
 hobbit1.grown_up?
