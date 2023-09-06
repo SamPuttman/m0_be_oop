@@ -44,7 +44,8 @@ end
 
 vampire1 = Vampire.new("Dracula")
 vampire2 = Vampire.new("Nicolas Cage", "wolf", false)
-
+vampire1.drink
+vampire2.drink
 
 #  Write a Dragon class
 #  it should have a dynamic name attribute (string)
@@ -77,6 +78,8 @@ class Dragon
 end
 
 dragon1 = Dragon.new("Smaug", "none", "red")
+
+dragon1.eat
 
 
 #  Write a Hobbit class
@@ -130,7 +133,14 @@ class Hobbit
     end
 end
 
+hobbit1 = Hobbit.new("Frodo", "Courageous", 22)
+hobbit2 = Hobbit.new("Sam", "Hungry", 24)
 
+hobbit1.celebrate_birthday
+hobbit1.grown_up?
+
+hobbit2.celebrate_birthday
+hobbit2.grown_up?
 
 
 
